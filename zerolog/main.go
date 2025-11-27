@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
@@ -26,7 +27,7 @@ func main() {
 		Str("Name", "Tom").
 		Send()
 
-	// set default level
+	// set the default level
 	zerolog.SetGlobalLevel(zerolog.InfoLevel)
 	if *debug {
 		zerolog.SetGlobalLevel(zerolog.DebugLevel)

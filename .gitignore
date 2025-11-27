@@ -1,2 +1,2 @@
 .idea
-zaplog/zap.log
+*.log
